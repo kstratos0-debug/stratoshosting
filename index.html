@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="el">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stratos ******** Management</title>
+    <meta name="description" content="Επαγγελματική διαχείριση Airbnb & βραχυχρόνιων μισθώσεων στην Αθήνα.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            background: #f4f6fb;
+            color: #1f2933;
+            line-height: 1.7;
+        }
+
+        header {
+            position: relative;
+            background: url('https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+            color: white;
+            padding: 120px 20px;
+            text-align: center;
+        }
+
+        header::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: rgba(15, 23, 42, 0.75);
+        }
+
+        header * {
+            position: relative;
+            z-index: 2;
+        }
+
+        header h1 {
+            font-size: 44px;
+            margin-bottom: 14px;
+            font-weight: 700;
+        }
+
+        header p {
+            font-size: 20px;
+            margin-bottom: 35px;
+            opacity: 0.95;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #3b82f6;
+            color: white;
+            padding: 16px 36px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            background: #2563eb;
+            transform: translateY(-2px);
+        }
+
+        section {
+            max-width: 1200px;
+            margin: auto;
+            padding: 90px 20px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 60px;
+            font-size: 34px;
+            font-weight: 700;
+            color: #0f172a;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 35px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 30px;
+        }
+
+        .card h3 {
+            margin-top: 0;
+            font-size: 20px;
+            color: #0f172a;
+        }
+
+        .card p {
+            color: #475569;
+        }
+
+        .split {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .split img {
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+        }
+
+        .steps {
+            background: white;
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+        }
+
+        .steps p {
+            font-size: 18px;
+            margin: 18px 0;
+        }
+
+        .pricing {
+            text-align: center;
+            background: linear-gradient(135deg, #eef2ff, #e0e7ff);
+            border-radius: 24px;
+            padding: 70px 30px;
+        }
+
+        .pricing p {
+            font-size: 22px;
+        }
+
+        .contact {
+            text-align: center;
+            background: #ffffff;
+            border-radius: 24px;
+            padding: 70px 30px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background: #0f172a;
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        footer p {
+            margin: 6px 0;
+            opacity: 0.9;
+        }
+
+        @media(max-width: 768px) {
+            .split {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Stratos ******** Management</h1>
+        <p>&Epsilon;&pi;&alpha;&gamma;&gamma;&epsilon;&lambda;&mu;&alpha;&tau;&iota;&kappa;ή &delta;&iota;&alpha;&chi;&epsilon;ί&rho;&iota;&sigma;&eta; &alpha;&kappa;&iota;&nu;ή&tau;&omega;&nu; &upsilon;&psi;&eta;&lambda;ή&sigmaf; &alpha;&pi;ό&delta;&omicron;&sigma;&eta;&sigmaf;</p><a href="#contact" class="btn">&Delta;&omega;&rho;&epsilon;ά&nu; &Alpha;&xi;&iota;&omicron;&lambda;ό&gamma;&eta;&sigma;&eta; &Alpha;&kappa;&iota;&nu;ή&tau;&omicron;&upsilon;</a>
+    </header>
+    <section>
+        <h2>&Omicron;&iota; &Upsilon;&pi;&eta;&rho;&epsilon;&sigma;ί&epsilon;&sigmaf; &mu;&alpha;&sigmaf;</h2>
+        <div class="grid">
+            <div class="card"><img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=800&q=80" width="357" height="180">
+                <div class="card-content">
+                    <h3>&Pi;&lambda;ή&rho;&eta;&sigmaf; &Delta;&iota;&alpha;&chi;&epsilon;ί&rho;&iota;&sigma;&eta; Airbnb</h3>
+                    <p>&Alpha;&nu;&alpha;&lambda;&alpha;&mu;&beta;ά&nu;&omicron;&upsilon;&mu;&epsilon; &epsilon;&xi; &omicron;&lambda;&omicron;&kappa;&lambda;ή&rho;&omicron;&upsilon; &tau;&eta; &lambda;&epsilon;&iota;&tau;&omicron;&upsilon;&rho;&gamma;ί&alpha; &kappa;&alpha;&iota; &tau;&iota;&sigmaf; &kappa;&rho;&alpha;&tau;ή&sigma;&epsilon;&iota;&sigmaf;.</p>
+                </div>
+            </div>
+            <div class="card"><img src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=800&q=80" width="357" height="180">
+                <div class="card-content">
+                    <h3>&Delta;&upsilon;&nu;&alpha;&mu;&iota;&kappa;ή &Tau;&iota;&mu;&omicron;&lambda;ό&gamma;&eta;&sigma;&eta;</h3>
+                    <p>&Alpha;&upsilon;&xi;ά&nu;&omicron;&upsilon;&mu;&epsilon; &pi;&lambda;&eta;&rho;ό&tau;&eta;&tau;&alpha; &kappa;&alpha;&iota; &kappa;&alpha;&theta;&alpha;&rho;ό &epsilon;&iota;&sigma;ό&delta;&eta;&mu;&alpha;.</p>
+                </div>
+            </div>
+            <div class="card"><img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80" width="357" height="180">
+                <div class="card-content">
+                    <h3>&Kappa;&alpha;&theta;&alpha;&rho;&iota;&sigma;&mu;&omicron;ί &amp; &Lambda;&epsilon;&upsilon;&kappa;ά &Epsilon;ί&delta;&eta;</h3>
+                    <p>&Epsilon;&pi;&alpha;&gamma;&gamma;&epsilon;&lambda;&mu;&alpha;&tau;&iota;&kappa;ή &epsilon;&iota;&kappa;ό&nu;&alpha; &gamma;&iota;&alpha; &kappa;ά&theta;&epsilon; &epsilon;&pi;&iota;&sigma;&kappa;έ&pi;&tau;&eta;.</p>
+                </div>
+            </div>
+            <div class="card"><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" width="357" height="180">
+                <div class="card-content">
+                    <h3>Check-in / Check-out</h3>
+                    <p>&Omicron;&mu;&alpha;&lambda;ή &epsilon;&mu;&pi;&epsilon;&iota;&rho;ί&alpha; &chi;&omega;&rho;ί&sigmaf; &delta;&iota;&kappa;ή &sigma;&alpha;&sigmaf; &pi;&alpha;&rho;&omicron;&upsilon;&sigma;ί&alpha;.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="split"><img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1200&q=80" width="545" height="364" style="margin: 0 auto 0 0; display: block; ">
+            <div class="steps">
+                <h2>&Pi;ώ&sigmaf; &lambda;&epsilon;&iota;&tau;&omicron;&upsilon;&rho;&gamma;&epsilon;ί</h2>
+                <p><strong>1.</strong> &Delta;&omega;&rho;&epsilon;ά&nu; &alpha;&xi;&iota;&omicron;&lambda;ό&gamma;&eta;&sigma;&eta; &alpha;&kappa;&iota;&nu;ή&tau;&omicron;&upsilon;</p>
+                <p><strong>2.</strong> &Sigma;&tau;ή&sigma;&iota;&mu;&omicron; &kappa;&alpha;&tau;&alpha;&chi;ώ&rho;&iota;&sigma;&eta;&sigmaf; &amp; &tau;&iota;&mu;ώ&nu;</p>
+                <p><strong>3.</strong> &Pi;&lambda;ή&rho;&eta;&sigmaf; &epsilon;&pi;&alpha;&gamma;&gamma;&epsilon;&lambda;&mu;&alpha;&tau;&iota;&kappa;ή &delta;&iota;&alpha;&chi;&epsilon;ί&rho;&iota;&sigma;&eta;</p>
+                <p><strong>4.</strong> &Mu;&eta;&nu;&iota;&alpha;ί&alpha; &pi;&lambda;&eta;&rho;&omega;&mu;ή &amp; report</p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="pricing">
+            <h2>&Tau;&iota;&mu;&omicron;&lambda;ό&gamma;&eta;&sigma;&eta;</h2>
+            <p>&Pi;&omicron;&sigma;&omicron;&sigma;&tau;ό &delta;&iota;&alpha;&chi;&epsilon;ί&rho;&iota;&sigma;&eta;&sigmaf; <strong>20% &ndash; 30%</strong><br>&Chi;&omega;&rho;ί&sigmaf; &sigma;&tau;&alpha;&theta;&epsilon;&rho;ά &kappa;ό&sigma;&tau;&eta; &bull; &Alpha;&pi;ό&lambda;&upsilon;&tau;&eta; &delta;&iota;&alpha;&phi;ά&nu;&epsilon;&iota;&alpha;</p>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="contact">
+            <h2>&Epsilon;&pi;&iota;&kappa;&omicron;&iota;&nu;&omega;&nu;ί&alpha;</h2>
+            <p>📍 &Alpha;&theta;ή&nu;&alpha;</p>
+            <p>📧 info@stratospm.gr</p>
+            <p>📞 +30 69XXXXXXXX</p>
+        </div>
+    </section>
+    <footer>
+        <p><strong>Stratos Property Management</strong></p>
+        <p>&Epsilon;&pi;&alpha;&gamma;&gamma;&epsilon;&lambda;&mu;&alpha;&tau;&iota;&kappa;ή &delta;&iota;&alpha;&chi;&epsilon;ί&rho;&iota;&sigma;&eta; &beta;&rho;&alpha;&chi;&upsilon;&chi;&rho;ό&nu;&iota;&omega;&nu; &mu;&iota;&sigma;&theta;ώ&sigma;&epsilon;&omega;&nu;</p>
+    </footer>
+
+<div style="color: red">Word to HTML trial - please <a href="https://wordtohtml.net/site/payment">Go PRO</a> to get whole HTML.</div>
+</body>
+
+</html>
